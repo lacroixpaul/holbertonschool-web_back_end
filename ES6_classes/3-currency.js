@@ -33,6 +33,6 @@ export default class Currency {
   }
 
   displayFullCurrency() {
-    console.log('%s (%s)', this._name, this._code);
+    return `${this._name} (${this._code})`;
   }
 }
