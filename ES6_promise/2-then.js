@@ -7,8 +7,9 @@ export default function handleResponseFromAPI(promise) {
         body: 'success',
       };
     })
+    // eslint-disable-next-line
     .catch(() => {
-      console.error('Error');
+      return (new Error());
     })
     .finally(() => {
     });
